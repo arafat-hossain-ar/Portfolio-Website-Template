@@ -70,11 +70,12 @@ body {
   background-color: transparent ;
   font-family: 'Archivo Black', sans-serif;
   color: black;
+  width: 100%;
 }
 .navbar-collapse {
   height: 100%;
   transition: all 0.2s;
-  background-color: rgba(0, 0, 0, 0.25);
+  /* background-color: rgba(0, 0, 0, 0.25); */
   justify-content: flex-end;
 }
 .navbar-brand {
@@ -89,6 +90,10 @@ body {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   
+}
+.navbar button:focus{
+  border: none;
+  outline: none;
 }
 .navbar-toggler-icon {
   color: teal;
@@ -211,10 +216,13 @@ body {
   font-family: 'Bree Serif', serif;
 }
 
-.text-affect,
+.text-affect{
+  font-size: 30px;
+  display: inline;
+}
 .typed-cursor {
   display: inline;
-  font-size: 4em;
+  font-size: 30px;
   font-weight: 700;
   color: #ffffff;
 }

@@ -2,7 +2,6 @@
 //Javascript codes start here
 
 $(document).ready(function () {
-    'use strict';
 
     // setTimeout(function () {
     //     $('.loader_bg').fadeToggle();
@@ -20,6 +19,18 @@ $(document).ready(function () {
             $(".navbar-brand").css("color", "white")
         }
     });
+
+    $(".navbar-toggler").click(function(){
+        $(".navbar-collapse").css("background-color", "rgba(255, 255, 255, 0.25)")
+        if ($('.icon').hasClass(' fa-bars')){
+            $('.icon').removeClass(' fa-bars');
+            $('.icon').addClass(' fa-times'); 
+            console.log(1);
+        } else {
+            // $('.icon').addClass(' fa-bars');
+          }
+        
+    })
 
     var element = $(".text-affect");
 
@@ -52,23 +63,14 @@ $(document).ready(function () {
 
     $("#review-slider").owlCarousel({
         items: 1,
-
         itemsDesktop: [1000, 1],
-
         itemsDesktopSmall: [979, 1],
-
         itemsTablet: [768, 1],
-
         pagination: true,
-
         navigation: false,
-
         slideSpeed: 1000,
-
         singleItem: false,
-
         autoplay: true,
-
         loop: true
     });
 
