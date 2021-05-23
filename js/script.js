@@ -13,24 +13,24 @@ $(document).ready(function () {
             $(".navbar-collapse").css("background-color", "transparent");
             $(".nav-link").css("color", "teal")
             $(".navbar-brand").css("color", "teal")
+            $(".bar1").css("background-color", "teal")
+            $(".bar2").css("background-color", "teal")
+            $(".bar3").css("background-color", "teal")
+
         } else {
             $(".navbar").css({ "background-color": "transparent", "box-shadow": "none" });
-            $(".nav-link").css("color", "white")
+            $(".nav-link").css("color", "black")
             $(".navbar-brand").css("color", "white")
+            $(".bar1").css("background-color", "rgba(255, 255, 255, 1)")
+            $(".bar2").css("background-color", "rgba(255, 255, 255, 1)")
+            $(".bar3").css("background-color", "rgba(255, 255, 255, 1)")
         }
     });
 
-    $(".navbar-toggler").click(function(){
-        $(".navbar-collapse").css("background-color", "rgba(255, 255, 255, 0.25)")
-        if ($('.icon').hasClass(' fa-bars')){
-            $('.icon').removeClass(' fa-bars');
-            $('.icon').addClass(' fa-times'); 
-            console.log(1);
-        } else {
-            // $('.icon').addClass(' fa-bars');
-          }
-        
+    $(".navbar-toggler").click(function () {
+        $(".navbar-collapse").css("background-color", "rgba(255, 255, 255, 0.7)")
     })
+
 
     var element = $(".text-affect");
 

@@ -55,8 +55,13 @@
     <!-- navbar start here -->
     <div class="navbar navbar-expand-md fixed-top">
         <a href="#home" class="navbar-brand">Natasha</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"> <i class="icon fa fa-bars"></i> </span>
+        <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"  aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"> <i class="fa fa-bars"></i> <i style="display: none;" class="fa fa-times"></i> </span>-->
+            <div class="nav-container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
@@ -618,9 +623,7 @@
     </div>
     <!-- Javascript resources-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
     <script src="js/script.js"></script>
 
     <!--particle js-->
@@ -635,7 +638,13 @@
     <script src="js/validator.js"></script>
     <!--Magnific popup js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-
+    <script>
+        AOS.init();
+        
+    function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
 </body>
 <!-- body end here -->
 
